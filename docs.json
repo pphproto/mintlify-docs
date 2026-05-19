@@ -36,7 +36,7 @@
       "anchors": [
         {
           "anchor": "Floto Home",
-          "href": "https://floto.ai",
+          "href": "https://app.floto.ai/",
           "icon": "home"
         },
         {
@@ -55,7 +55,7 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@floto.ai"
+        "href": "mailto:help@floto.ai"
       }
     ],
     "primary": {

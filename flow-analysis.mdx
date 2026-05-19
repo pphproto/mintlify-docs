@@ -21,6 +21,8 @@ Choose how you want to analyze your flow:
 
 Analyze static screens for missing states and edge cases.
 
+<img src="/images/flow-analysis/missing-states.png" alt="Missing States Analysis" />
+
 **Select 1-6 frames** that are part of a flow. Floto identifies:
 - Missing states and scenarios
 - Incomplete edge cases
@@ -31,7 +33,11 @@ Analyze static screens for missing states and edge cases.
 
 Test interactive prototypes to see how users navigate.
 
-**Select 2-6 frames** (interactive prototype) **+ define a task**.
+<img src="/images/flow-analysis/flow-testing.png" alt="Flow Testing" />
+
+**Select a start frame** + **define a task**.
+
+Requirement: Figma prototype must be connected to your start frame (frames linked via prototype connections in Figma).
 
 Task example: "Sign up for an account", "Complete checkout", "Find the pricing page"
 
@@ -49,6 +55,8 @@ Floto simulates:
 
 Click **Flow Analysis** in the Floto plugin.
 
+<img src="/images/flow-analysis/step1.png" alt="Step 1: Open Flow Analysis" />
+
 Test complete user journeys—onboarding, checkout, and any critical path. See where users get stuck before they hit production.
 
 ### Step 2: Choose Analysis Type
@@ -58,43 +66,38 @@ Select one of two types:
 - **Missing States** - Find missing states and incomplete scenarios
 - **Flow Testing** - Test how users move through your prototype
 
+<img src="/images/flow-analysis/step2.png" alt="Step 2: Choose Analysis Type" />
+
+---
+
 ### Step 3: Select Frames
 
 **For Missing States:**
-- 1-6 frames representing your flow
+- Select 1-6 frames representing your flow
 - Can be screens, wireframes, mockups, or components
 
+<img src="/images/flow-analysis/step3-missing-states.png" alt="Step 3: Missing States Frames" />
+
 **For Flow Testing:**
-- 2-6 frames (interactive prototype with navigation)
-- Frames should connect in a logical flow
+- Select a start frame
+- Figma prototype must be connected to that frame (prototype connections required)
+- Define what users should accomplish:
+  - "Sign up for an account"
+  - "Complete checkout"
+  - "Find pricing and select a plan"
+  - "Reset a forgotten password"
 
-### Step 4: Define Task (Flow Testing Only)
+<img src="/images/flow-analysis/step3-flow-testing.png" alt="Step 3: Flow Testing Frames" />
 
-Describe what users should accomplish:
-- "Sign up for an account"
-- "Complete checkout"
-- "Find pricing and select a plan"
-- "Reset a forgotten password"
+### Step 4: Review Results
 
-Floto tests how users navigate to achieve this goal.
+**For Missing States:**
 
-### Step 5: Run Analysis
+<img src="/images/flow-analysis/step-4-missing-states.png" alt="Step 4: Missing States Results" />
 
-Processing starts automatically.
+**For Flow Testing:**
 
-**Missing States** (~5 processing stages):
-1. Processing frames
-2. Mapping user journeys
-3. Identifying missing states
-4. Checking edge cases
-5. Generating report
-
-**Flow Testing** (~5 processing stages):
-1. Analyzing prototype structure
-2. Mapping navigation paths
-3. Preparing AI agent
-4. Initializing flow test
-5. Getting ready to start
+<img src="/images/flow-analysis/step-4-flow-testing.png" alt="Step 4: Flow Testing Results" />
 
 ---
 
@@ -133,10 +136,13 @@ See how users navigate:
 - Maximum: 20MB per frame
 - Recommended: 320px - 1920px width
 
-### Frame Count
+### Frame Selection
 
 **Missing States**: 1-6 frames
-**Flow Testing**: 2-6 frames (interactive with navigation)
+
+**Flow Testing**: 1 start frame
+- Figma prototype must be connected to that frame
+- Prototype connections required in Figma (interactions set up)
 
 ---
 
