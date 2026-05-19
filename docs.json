@@ -17,60 +17,16 @@
             "group": "Getting started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
             "group": "Features",
             "pages": [
               "design-audit",
-              "persona-testing"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "brand-colors",
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "persona-testing",
+              "flow-analysis",
+              "design-diff"
             ]
           }
         ]
@@ -85,7 +41,7 @@
         },
         {
           "anchor": "Figma Plugin",
-          "href": "https://figma.com",
+          "href": "https://www.figma.com/community/plugin/1517405046280643746",
           "icon": "figma"
         }
       ]
@@ -105,7 +61,7 @@
     "primary": {
       "type": "button",
       "label": "Install on Figma",
-      "href": "https://figma.com"
+      "href": "https://www.figma.com/community/plugin/1517405046280643746"
     }
   },
   "contextual": {
