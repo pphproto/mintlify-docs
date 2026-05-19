@@ -16,17 +16,17 @@
           {
             "group": "Getting started",
             "pages": [
-              "index",
-              "quickstart"
+              "getting-started/index",
+              "getting-started/quickstart"
             ]
           },
           {
             "group": "Features",
             "pages": [
-              "design-audit",
-              "persona-testing",
-              "flow-analysis",
-              "design-diff"
+              "features/design-audit",
+              "features/persona-testing",
+              "features/flow-analysis",
+              "features/design-diff"
             ]
           }
         ]
