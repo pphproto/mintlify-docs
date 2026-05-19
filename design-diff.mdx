@@ -31,7 +31,9 @@ After installing the extension, access Design Diff two ways:
 
 ### Via Plugin (Recommended)
 
-Run diffs directly in Figma:
+Run diffs directly in Figma.
+
+<img src="/images/design-diff/plugin-dashboard.png" alt="Plugin Dashboard" />
 
 1. Open the Floto plugin in Figma
 2. Click **Design Diff**
@@ -44,7 +46,9 @@ Works with free Figma plans — no rate limiting concerns.
 
 ### Via Chrome Extension
 
-Run diffs from your browser:
+Run diffs from your browser.
+
+<img src="/images/design-diff/extension-start-diff.png" alt="Start Diff from Extension" />
 
 1. Navigate to your live site in Chrome
 2. Click the Design Diff extension icon
@@ -57,15 +61,55 @@ Rate limiting applies with free Figma plan.
 
 ---
 
-## Understanding Results
+## Review Results
 
-### What You See
+After running a diff, Floto overlays every visual discrepancy on your live page.
 
-After running a diff, you get:
+<img src="/images/design-diff/results.png" alt="Diff Results" />
+
+Differences are highlighted and categorized:
 - **Color mismatches** - Hex values that don't match
 - **Spacing issues** - Padding, margins, gaps
 - **Typography problems** - Font sizes, weights, line heights
 - **Sizing discrepancies** - Element dimensions
+
+---
+
+## Inspect Differences
+
+Hover over highlighted elements to compare design specs vs implementation.
+
+<img src="/images/design-diff/inspect-mode.png" alt="Inspect Mode" />
+
+**Inspect mode** shows:
+- **Figma specs** - What was designed (colors, typography, spacing, dimensions)
+- **CSS values** - What's actually implemented
+- **Side-by-side overlay** - Design vs implementation comparison
+- **Design tokens** - Token names if you've imported your design system
+
+Toggle between three overlay modes:
+- **Wipe** - Slider view to compare before/after
+- **Issues** - Highlight all detected differences with categories
+- **Inspect** - Detailed hover inspection of individual elements
+
+---
+
+## Export Issues
+
+Create tracking issues in Linear or Jira from detected differences.
+
+<img src="/images/design-diff/export-linear-jira.png" alt="Export to Linear/Jira" />
+
+**Export to:**
+- **Linear** - Create issues grouped by element or category
+- **Jira** - Create issues in your Jira projects
+- **Share** - Generate shareable link for team review
+
+Issues include:
+- Visual difference details (color, spacing, typography, sizing)
+- Element location and context
+- Design token information if available
+- Screenshots from both Figma and live implementation
 
 ---
 
@@ -84,13 +128,6 @@ Figma API has rate limits depending on your plan:
 - **Extension only with free plan?** Rate limiting applies (6/month)
 - **Figma Pro with Dev/Full access?** Both methods work fine
 - **Organization+ tiers?** Both methods work well
-
-### Hover to Inspect
-
-Hover over any highlighted element to see:
-- **Figma specs** - What was designed
-- **CSS values** - What's actually implemented
-- **Side-by-side overlay** - Design vs implementation comparison
 
 ---
 
@@ -135,7 +172,7 @@ Floto opens your live site in the extension, takes screenshots, and compares the
 </Accordion>
 
 <Accordion title="Can I see where exactly things don't match?">
-Yes. Hover over any element to see a side-by-side overlay of Figma specs vs actual CSS values. Visual differences are highlighted on the page.
+Yes. Use inspect mode to hover over any element and see a side-by-side comparison of Figma specs vs actual CSS values. Visual differences are highlighted with categories (color, spacing, typography, sizing).
 </Accordion>
 
 <Accordion title="Can I compare multiple frames?">
@@ -146,6 +183,10 @@ Yes. Run separate diffs for each frame you want to check. Each diff is independe
 Diff works on any publicly accessible page. If your site requires login, log in first in your browser, then run the diff.
 </Accordion>
 
+<Accordion title="Can I export issues to our tracking system?">
+Yes. Export detected differences to Linear or Jira as grouped issues. Issues include visual details, element location, screenshots, and design token information.
+</Accordion>
+
 <Accordion title="Can I import Figma variables?">
 Design Diff can compare against your design token library if you've imported your Figma variable library. Specs will reflect your tokens.
 </Accordion>
@@ -153,4 +194,3 @@ Design Diff can compare against your design token library if you've imported you
 <Accordion title="How long does a diff take?">
 Typically 1-3 minutes depending on page complexity and load time.
 </Accordion>
-
